@@ -1,12 +1,14 @@
-# React + Vite
+# Laboratorio 1
+## Programación Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En este laboratorio deberán seleccionar una página web de su preferencia y recrearla utilizando componentes de React. La página elegida puede ser una dashboard, una landing page, un e-commerce, un blog, o cualquier otro tipo de sitio web.
+El objetivo principal es desarrollar la estructura visual de la página y organizar el código en componentes reutilizables. 
+Páginas que pueden utilizar (solo son ejemplos):
+- https://www.apple.com/co/iphone/
+- https://www.hoyoverse.com/en-us/
 
-Currently, two official plugins are available:
+## A tener en cuenta:
+- No es necesario implementar interacciones ni funcionalidades dinámicas, sólo se evaluará la parte visual y el uso de componentes.
+- Debe tener entre 6 y 10 componentes distintos.
+- Elementos como textos, títulos o descripciones en componentes repetitivos (como cards) deben ser renderizados dinámicamente a través de un array que contenga toda la información.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
