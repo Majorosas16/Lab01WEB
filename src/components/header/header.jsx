@@ -3,7 +3,8 @@ import './header.css';
 const Header = () => {
     return (
         <header>
-        <img src="./src/assets/spotify.svg" alt="spotify" class="spotify-icon" />
+        <a href="https://www.spotify.com/co-es/premium/" target="_blank"><img src="./src/assets/spotify.svg" alt="spotify" class="spotify-icon" /></a>
+        
         <section className='links'>
           <div className='header-links1'>
             <p>Premium</p>

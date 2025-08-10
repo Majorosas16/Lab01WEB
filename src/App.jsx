@@ -7,8 +7,8 @@ function App() {
 return (
   <main>
     <Header />
-    <div className="hero-container"> 
-      <section className='Sec1'>
+    <section className="hero-container"> 
+      <div className='Sec1'>
         <h1>Escucha sin límites. Prueba 1 mes de Premium Individual por $ 0.</h1>
         <p className='later'>Después, solo cuesta $ 18.500 por mes. Cancela cuando quieras.</p>
         
@@ -20,8 +20,11 @@ return (
         <p className='dis'>
           $ 0 por 1 mes. Después, cuesta $ 18.500 al mes. La oferta solo está disponible si aún no probaste Premium. Se aplican Términos.
         </p>
+      </div>
+    </section>
+          <section className='next-container'>
+        <h1>NEXT</h1>
       </section>
-    </div>
   </main>
 );
 }
