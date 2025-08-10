@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+  height: 78px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  max-width: 2000px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--spotify-black)
+}
+
+.spotify-icon {
+  height: 35px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+}
+
+.spotify-icon:hover {
+  transform: scale(1.05);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-links1, .header-links2 {
+  display: flex;
+  gap: 20px;
+}
+
+.header-links1 p, .header-links2 p {
+  color: white;
+  font-weight: 600; 
+  font-size: 15px; 
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.header-links1 p:hover, .header-links2 p:hover {
+  color: var(--spotify-green);
+}
+
+.vertical-hr {
+  height: 16px; 
+  border-left: 1px solid rgb(255, 255, 255); 
+  margin: 0 4px;
+}

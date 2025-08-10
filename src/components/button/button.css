@@ -1,0 +1,16 @@
+.button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    opacity: 0.9;
+     background-color: var(--hover-bg, var( --spotify-green)) !important; /* Usa la variable o verde por defecto */
+     color: var(--hover-color, #000) !important;
+     transform: scale(1.05);
+}
