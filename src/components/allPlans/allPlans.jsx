@@ -3,7 +3,7 @@ import './allPlans.css';
 function PremiumBenefits({ benefits }) {
   return (
     <section className="premium-benefits">
-      <h2>Todos los planes Premium incluyen lo siguiente:</h2>
+      <h2>Todos los planes Premium <br /> incluyen lo siguiente:</h2>
       <ul>
         {benefits.map((item, index) => (
           <li key={index}>
