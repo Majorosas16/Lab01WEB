@@ -9,7 +9,7 @@ main {
 .hero-container {
   background: url('../src//assets/backback.png') no-repeat center center; 
   background-size: cover;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 40px);
   padding: 40px;
   display: flex;
   align-items: center;
@@ -46,8 +46,53 @@ main {
   margin: 32px 0;
 }
 
-.next-container {
-  padding: 40px;
+.transfer-section {
+  width: 100%;
+}
+
+/* Imagen (tamaño fijo sin distorsión) */
+.transfer-image-container {
+  width: 100%;
+  height: 500px; /* Altura exacta de la imagen */
+  overflow: hidden; /* Recorta excesos */
+}
+
+.transfer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre el contenedor sin distorsión */
+  object-position: center; /* Enfoca el centro */
+}
+
+.transfer-content {
+  padding: 20px 10%; /* Aumenté el padding vertical de 60px a 80px */
+  min-height: 500px; /* Altura mínima garantizada */
+  color: white;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+  margin-bottom: 8%;
+  background-color: #1D1D1B;
+}
+
+/* Ajustes para los elementos internos */
+.transfer-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem; /* Aumenté el margen inferior */
+}
+
+.transfer-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.transfer-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 1.5rem; /* Espacio adicional arriba de los botones */
 }
