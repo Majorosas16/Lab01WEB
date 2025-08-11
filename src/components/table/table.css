@@ -15,6 +15,12 @@
   margin-bottom: 24px;
 }
 
+.premium {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .check {
   width: 50px;

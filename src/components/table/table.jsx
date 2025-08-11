@@ -11,7 +11,7 @@ const ComparisonTable = ({ rows }) => {
           <tr>
             <th>Beneficios</th>
             <th>Servicio gratuito de Spotify</th>
-            <div>
+            <div className='premium'>
             <img className='check' src="./src/assets/SpotifySmall.svg" alt="" />
             <th>Planes Premium de Spotify</th>
             </div>

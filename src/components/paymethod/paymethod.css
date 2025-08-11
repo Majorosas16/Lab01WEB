@@ -1,0 +1,38 @@
+.payment-method {
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  min-height: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.payment-method img {
+  max-width: 100%;
+  max-height: 30px;
+  object-fit: contain;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.payment-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #1D1D1B;
+  color: white;
+  margin-top: 5%;
+}
+
+.more-methods {
+  margin-top: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}

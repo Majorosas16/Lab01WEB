@@ -3,6 +3,8 @@ import Button from './components/button/button'
 import Header from './components/header/header'
 import ComparisonTable from './components/table/table'
 import { benefits } from './data/comparisonData'
+import { paymentMethods } from './data/paymentMethodsData'
+import PaymentMethod from './components/paymethod/paymethod'
 
 function App() {
 
@@ -60,7 +62,22 @@ return (
         </div>
       </section>
 
-      <ComparisonTable rows={rows} />
+    <ComparisonTable rows={rows} />
+    
+    {/* Métodos de pago */}
+      <section className="payment-section">
+        <h2 className='h2'>Planes accesibles para cada situación</h2>
+        <p>
+          Elige un plan Premium y escucha música sin anuncios y sin límites en tu teléfono, altavoz y otros dispositivos. 
+          Accede a varias formas de pago. Cancela cuando quieras.
+        </p>
+        <div className="payment-methods">
+          {paymentMethods.map((method, index) => (
+            <PaymentMethod key={index} imgSrc={method.imgSrc} alt={method.alt} />
+          ))}
+        </div>
+        <p className="more-methods">y 2 más</p>
+      </section>
 
     </main>
   )
