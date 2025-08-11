@@ -26,9 +26,10 @@ benefits.forEach((item, index) => {
 
 return (
     <main>
+    {/* Header */}
       <Header />
 
-      {/* Sección Hero */}
+      {/* Image created */}
       <section className="hero-container"> 
         <div className='Sec1'>
           <h1>Escucha sin límites. Prueba 1 mes de Premium Individual por $ 0.</h1>
@@ -45,7 +46,7 @@ return (
         </div>
       </section>
 
-      {/* Sección Transferencia */}
+      {/* Transfer */}
       <section className="transfer-section">
         <div className="transfer-image-container">
           <img 
@@ -67,9 +68,10 @@ return (
         </div>
       </section>
 
+      {/* compare table */}
     <ComparisonTable rows={rows} />
     
-    {/* Métodos de pago */}
+    {/* methods */}
       <section className="payment-section">
         <h2 className='h2'>Planes accesibles para cada situación</h2>
         <p>
@@ -84,15 +86,17 @@ return (
         <p className="more-methods">y 2 más</p>
       </section>
 
+      {/* premium benefits */}
     <PremiumBenefits benefits={benefits} />
 
-          {/* Bloque de planes */}
+          {/* plans cards */}
       <section className="plans-container">
         {plansData.map((plan, index) => (
           <PlanCard key={index} {...plan} />
         ))}
       </section>
 
+      {/* Questions */}
       <section className="faq-section">
   <h2>¿Tienes alguna pregunta?</h2>
   <p className="faq-subtitle">
@@ -106,7 +110,7 @@ return (
   </div>
 </section>
 
- {/* Footer */}
+      {/* Footer */}
       <footer className="footer">
         <div className="footer-top">
           <img src="./src/assets/spotify.svg" alt="Spotify" className="footer-logo" />
