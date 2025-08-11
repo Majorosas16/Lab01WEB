@@ -5,6 +5,11 @@ import ComparisonTable from './components/table/table'
 import { benefits } from './data/comparisonData'
 import { paymentMethods } from './data/paymentMethodsData'
 import PaymentMethod from './components/paymethod/paymethod'
+import PremiumBenefits from './components/allPlans/allPlans';
+import PlanCard from './components/card/card'
+import { plansData } from './data/cardsData'
+import FAQItem from './components/questions/questions'
+import { faqData } from './data/faqData'
 
 function App() {
 
@@ -78,6 +83,100 @@ return (
         </div>
         <p className="more-methods">y 2 más</p>
       </section>
+
+    <PremiumBenefits benefits={benefits} />
+
+          {/* Bloque de planes */}
+      <section className="plans-container">
+        {plansData.map((plan, index) => (
+          <PlanCard key={index} {...plan} />
+        ))}
+      </section>
+
+      <section className="faq-section">
+  <h2>¿Tienes alguna pregunta?</h2>
+  <p className="faq-subtitle">
+    Tenemos las respuestas. Encuentra más respuestas en nuestro{" "}
+    <a href="#">sitio de ayuda</a>.
+  </p>
+  <div className="faq-container">
+    {faqData.map((question, index) => (
+      <FAQItem key={index} question={question} />
+    ))}
+  </div>
+</section>
+
+ {/* Footer */}
+      <footer className="footer">
+        <div className="footer-top">
+          <img src="./src/assets/spotify.svg" alt="Spotify" className="footer-logo" />
+
+          <div className="footer-columns">
+            <div>
+              <h4>Compañía</h4>
+              <ul>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Empleo</a></li>
+                <li><a href="#">For the Record</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Comunidades</h4>
+              <ul>
+                <li><a href="#">Servicios para artistas</a></li>
+                <li><a href="#">Desarrolladores</a></li>
+                <li><a href="#">Publicidad</a></li>
+                <li><a href="#">Inversionistas</a></li>
+                <li><a href="#">Proveedores</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Enlaces útiles</h4>
+              <ul>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Reproductor web</a></li>
+                <li><a href="#">App móvil gratis</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>Planes de Spotify</h4>
+              <ul>
+                <li><a href="#">Premium Individual</a></li>
+                <li><a href="#">Premium Duo</a></li>
+                <li><a href="#">Premium Familiar</a></li>
+                <li><a href="#">Premium para Estudiantes</a></li>
+                <li><a href="#">Versión gratuita</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="footer-socials">
+            <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" alt="Instagram" /></a>
+            <a href="#"><img src="https://somoscomunidad.org.ve/wp-content/uploads/2024/03/Twitter-X-White-Logo-PNG-1.png" alt="Twitter" /></a>
+            <a href="#"><img src="https://img.icons8.com/m_rounded/512/facebook-new.png" alt="Facebook" /></a>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <div className="footer-links">
+            <a href="#">Legal</a>
+            <a href="#">Seguridad y Centro de Privacidad</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Cookies</a>
+            <a href="#">Sobre los anuncios</a>
+            <a href="#">Accesibilidad</a>
+          </div>
+          <div className="footer-country">
+            <span>Colombia</span>
+          </div>
+          <div className="footer-copy">
+            © 2025 Spotify AB
+          </div>
+        </div>
+      </footer>
 
     </main>
   )
